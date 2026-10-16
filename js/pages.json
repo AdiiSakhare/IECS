@@ -1,0 +1,317 @@
+[
+  {
+    "url": "index.html",
+    "title": "IECS — Practical engineering. Better production.",
+    "type": "main"
+  },
+  {
+    "url": "products.html",
+    "title": "Products — IECS",
+    "type": "main"
+  },
+  {
+    "url": "services.html",
+    "title": "Services — IECS",
+    "type": "main"
+  },
+  {
+    "url": "about.html",
+    "title": "About — IECS",
+    "type": "main"
+  },
+  {
+    "url": "contact.html",
+    "title": "Start a conversation — IECS",
+    "type": "main"
+  },
+  {
+    "url": "products/vision.html",
+    "title": "Vision & testing — IECS products",
+    "type": "family"
+  },
+  {
+    "url": "products/vision/vision-testing-system.html",
+    "title": "Vision Testing System — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/vision/vision-testing-bench.html",
+    "title": "Vision Testing Bench — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/vision/final-inspection-station.html",
+    "title": "Final Inspection Station — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/conveyors.html",
+    "title": "Conveyors & lines — IECS products",
+    "type": "family"
+  },
+  {
+    "url": "products/conveyors/automated-assembly-line.html",
+    "title": "Automated Assembly Line — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/conveyors/inclined-belt-conveyor.html",
+    "title": "Inclined Belt Conveyor — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/conveyors/mobile-incline-conveyor.html",
+    "title": "Mobile Incline Conveyor — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/conveyors/mobile-belt-conveyor.html",
+    "title": "Mobile Belt Conveyor — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/conveyors/dual-lane-belt-conveyor.html",
+    "title": "Dual-Lane Belt Conveyor — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/conveyors/dual-lane-conveyor-e-stop-stations.html",
+    "title": "Dual-Lane Conveyor, E-Stop Stations — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/conveyors/conveyor-with-overhead-light-frame.html",
+    "title": "Conveyor with Overhead Light Frame — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/conveyors/multi-tier-conveyor.html",
+    "title": "Multi-Tier Conveyor — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/conveyors/assembly-workstation-conveyor-infeed.html",
+    "title": "Assembly Workstation, Conveyor Infeed — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/guarding.html",
+    "title": "Guarding & enclosures — IECS products",
+    "type": "family"
+  },
+  {
+    "url": "products/guarding/machine-safety-enclosure.html",
+    "title": "Machine Safety Enclosure — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/guarding/machine-safety-cage.html",
+    "title": "Machine Safety Cage — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/guarding/safety-guard-frame.html",
+    "title": "Safety Guard Frame — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/guarding/mesh-machine-guard.html",
+    "title": "Mesh Machine Guard — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/guarding/polycarbonate-guard-enclosure.html",
+    "title": "Polycarbonate Guard Enclosure — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/guarding/machine-access-platform.html",
+    "title": "Machine Access Platform — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/workbenches.html",
+    "title": "Assembly workstations — IECS products",
+    "type": "family"
+  },
+  {
+    "url": "products/workbenches/pegboard-assembly-workbench.html",
+    "title": "Pegboard Assembly Workbench — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/workbenches/esd-safe-assembly-workbench.html",
+    "title": "ESD-Safe Assembly Workbench — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/workbenches/workbench-cluster-drawer-storage.html",
+    "title": "Workbench Cluster, Drawer Storage — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/workbenches/workbench-row-mesh-panel.html",
+    "title": "Workbench Row, Mesh Panel — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/workbenches/workbench-row-perforated-backpanel.html",
+    "title": "Workbench Row, Perforated Backpanel — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/workbenches/multi-bay-workbench-line.html",
+    "title": "Multi-Bay Workbench Line — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/workbenches/workbench-component-reference.html",
+    "title": "Workbench Component Reference — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/storage.html",
+    "title": "Storage & transport — IECS products",
+    "type": "family"
+  },
+  {
+    "url": "products/storage/material-transport-carts.html",
+    "title": "Material Transport Carts — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/storage/mesh-transport-carts.html",
+    "title": "Mesh Transport Carts — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/storage/roller-shelf-cart.html",
+    "title": "Roller Shelf Cart — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/storage/bin-tray-cart.html",
+    "title": "Bin Tray Cart — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/storage/parts-bin-storage-trolley.html",
+    "title": "Parts Bin Storage Trolley — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/storage/tiered-tote-bin-trolley.html",
+    "title": "Tiered Tote Bin Trolley — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/storage/pigeonhole-storage-station.html",
+    "title": "Pigeonhole Storage Station — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/storage/tiered-cart-task-light.html",
+    "title": "Tiered Cart, Task Light — IECS",
+    "type": "product"
+  },
+  {
+    "url": "products/storage/tool-storage-cabinet.html",
+    "title": "Tool Storage Cabinet — IECS",
+    "type": "product"
+  },
+  {
+    "url": "services/industrial-automation.html",
+    "title": "Industrial Automation — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/plc-and-scada-solutions.html",
+    "title": "PLC & SCADA Solutions — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/robotic-integration.html",
+    "title": "Robotic Integration — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/retrofitting-and-automation-upgrades.html",
+    "title": "Retrofitting & Automation Upgrades — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/control-panel-manufacturing.html",
+    "title": "Control Panel Manufacturing — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/special-purpose-machines.html",
+    "title": "Special Purpose Machines — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/sheet-metal-fabrication.html",
+    "title": "Sheet Metal Fabrication — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/jigs-and-fixtures-design.html",
+    "title": "Jigs & Fixtures Design — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/pneumatic-and-hydraulic-systems.html",
+    "title": "Pneumatic & Hydraulic Systems — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/assembly-line-and-conveyor-setup.html",
+    "title": "Assembly Line & Conveyor Setup — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/machine-guarding-and-safety.html",
+    "title": "Machine Guarding & Safety — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/testing-and-eol-setups.html",
+    "title": "Testing & EOL Setups — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/quality-inspection-systems.html",
+    "title": "Quality Inspection Systems — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/ergonomic-workstation-design.html",
+    "title": "Ergonomic Workstation Design — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/material-handling-systems.html",
+    "title": "Material Handling Systems — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/storage-and-racking-solutions.html",
+    "title": "Storage & Racking Solutions — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/installation-and-maintenance.html",
+    "title": "Installation & Maintenance — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/preventive-maintenance-contracts.html",
+    "title": "Preventive Maintenance Contracts — IECS services",
+    "type": "service"
+  },
+  {
+    "url": "services/spare-parts-and-technical-support.html",
+    "title": "Spare Parts & Technical Support — IECS services",
+    "type": "service"
+  }
+]

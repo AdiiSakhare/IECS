@@ -1,0 +1,207 @@
+[
+  {
+    "id": "vision",
+    "title": "Vision & Testing Systems",
+    "description": "Enclosed cells and benches for camera-based inspection and quality checks, built around your part and test process.",
+    "products": [
+      {
+        "name": "Vision Testing System",
+        "description": "Enclosed inspection cell with camera mounting, integrated display and controls for repeatable in-line testing.",
+        "originalImage": "./assets/images/products/vision-testing-system-enclosure.jpeg"
+      },
+      {
+        "name": "Vision Testing Bench",
+        "description": "Bench-top vision test station with controlled lighting and an operator display for component checks.",
+        "originalImage": "./assets/images/products/vision-testing-bench-enclosure.jpeg"
+      },
+      {
+        "name": "Final Inspection Station",
+        "description": "Full-length inspection bench with overhead frame and storage below, for end-of-line quality checks.",
+        "originalImage": "./assets/images/products/final-inspection-station-cabinet-placeholder.png"
+      }
+    ]
+  },
+  {
+    "id": "conveyors",
+    "title": "Conveyors & Assembly Lines",
+    "description": "Belt conveyors and assembly lines in flat, inclined, dual-lane and multi-tier layouts, with controls and safety stops.",
+    "products": [
+      {
+        "name": "Automated Assembly Line",
+        "description": "Conveyor line with safety guarding and operator stations for automated assembly.",
+        "originalImage": "./assets/images/products/automated-assembly-line-safety-guarding-placeholder.png"
+      },
+      {
+        "name": "Inclined Belt Conveyor",
+        "description": "Belt conveyor with an incline section for lifting parts between levels.",
+        "originalImage": "./assets/images/products/inclined-belt-conveyor-placeholder.png"
+      },
+      {
+        "name": "Mobile Incline Conveyor",
+        "description": "Inclined belt conveyor on castors, easy to reposition across the shop floor.",
+        "originalImage": "./assets/images/products/incline-belt-conveyor-mobile-placeholder.png"
+      },
+      {
+        "name": "Mobile Belt Conveyor",
+        "description": "Flat belt conveyor on castors for flexible line layouts.",
+        "originalImage": "./assets/images/products/mobile-belt-conveyor-castors-placeholder.png"
+      },
+      {
+        "name": "Dual-Lane Belt Conveyor",
+        "description": "Two parallel lanes with a dedicated control panel for independent product flow.",
+        "originalImage": "./assets/images/products/dual-lane-belt-conveyor-control-panel-placeholder.png"
+      },
+      {
+        "name": "Dual-Lane Conveyor, E-Stop Stations",
+        "description": "Dual-lane conveyor with emergency-stop stations along the line for operator safety.",
+        "originalImage": "./assets/images/products/dual-lane-conveyor-estop-stations-placeholder.png"
+      },
+      {
+        "name": "Conveyor with Overhead Light Frame",
+        "description": "Belt conveyor with an overhead lighting frame for well-lit inspection and assembly.",
+        "originalImage": "./assets/images/products/belt-conveyor-overhead-light-frame-placeholder.png"
+      },
+      {
+        "name": "Multi-Tier Conveyor",
+        "description": "Multi-level conveyor arrangement with a motor rack, saving floor space.",
+        "originalImage": "./assets/images/products/multi-tier-conveyor-motor-rack-placeholder.png"
+      },
+      {
+        "name": "Assembly Workstation, Conveyor Infeed",
+        "description": "Workstation fed directly by a conveyor infeed to keep parts moving to the operator.",
+        "originalImage": "./assets/images/products/assembly-workstation-conveyor-infeed-placeholder.png"
+      }
+    ]
+  },
+  {
+    "id": "guarding",
+    "title": "Machine Guarding & Enclosures",
+    "description": "Perimeter guards and enclosures in mesh or polycarbonate that protect operators without blocking the process.",
+    "products": [
+      {
+        "name": "Machine Safety Enclosure",
+        "description": "Perforated-mesh enclosure that keeps operators clear of moving machinery.",
+        "originalImage": "./assets/images/products/perforated-mesh-machine-safety-enclosure-large-placeholder.png"
+      },
+      {
+        "name": "Machine Safety Cage",
+        "description": "Safety cage with mesh panels for machine cells.",
+        "originalImage": "./assets/images/products/machine-safety-cage-mesh-panel-placeholder.png"
+      },
+      {
+        "name": "Safety Guard Frame",
+        "description": "Structural guard frame supplied unclad, ready for mesh or polycarbonate panels.",
+        "originalImage": "./assets/images/products/machine-safety-frame-unclad-placeholder.png"
+      },
+      {
+        "name": "Mesh Machine Guard",
+        "description": "Mesh guarding installed on the factory floor around production equipment.",
+        "originalImage": "./assets/images/products/mesh-machine-guard-factory-floor-placeholder.png"
+      },
+      {
+        "name": "Polycarbonate Guard Enclosure",
+        "description": "Transparent polycarbonate guarding that keeps the machine visible while protecting operators.",
+        "originalImage": "./assets/images/products/polycarbonate-machine-guard-enclosure-placeholder.png"
+      },
+      {
+        "name": "Machine Access Platform",
+        "description": "Access platform with steps for safe operator or maintenance reach.",
+        "originalImage": "./assets/images/products/machine-access-platform-steps-placeholder.png"
+      }
+    ]
+  },
+  {
+    "id": "workbenches",
+    "title": "Assembly Workbenches",
+    "description": "Ergonomic, ESD-safe and multi-station workbenches configured with panels, drawers and storage.",
+    "products": [
+      {
+        "name": "Pegboard Assembly Workbench",
+        "description": "Assembly workbench with a pegboard panel for hanging tools and fixtures.",
+        "originalImage": "./assets/images/products/assembly-workbench-pegboard-panel-placeholder.png"
+      },
+      {
+        "name": "ESD-Safe Assembly Workbench",
+        "description": "ESD-safe workbench with pegboard, suited to electronics assembly.",
+        "originalImage": "./assets/images/products/esd-assembly-workbench-pegboard-placeholder.png"
+      },
+      {
+        "name": "Workbench Cluster, Drawer Storage",
+        "description": "Grouped workbenches with drawer storage for team assembly cells.",
+        "originalImage": "./assets/images/products/assembly-workbench-cluster-drawer-storage-placeholder.png"
+      },
+      {
+        "name": "Workbench Row, Mesh Panel",
+        "description": "Row of benches with a mesh back panel for organised, shared workspaces.",
+        "originalImage": "./assets/images/products/assembly-workbench-row-mesh-panel-placeholder.png"
+      },
+      {
+        "name": "Workbench Row, Perforated Backpanel",
+        "description": "Bench row with a perforated back panel for mounting tools and accessories.",
+        "originalImage": "./assets/images/products/assembly-workbench-row-perforated-backpanel-placeholder.png"
+      },
+      {
+        "name": "Multi-Bay Workbench Line",
+        "description": "Multi-bay bench line for high-volume manual assembly.",
+        "originalImage": "./assets/images/products/multi-bay-assembly-workbench-line-placeholder.png"
+      },
+      {
+        "name": "Workbench Component Reference",
+        "description": "Labeled reference showing the configurable components and add-ons available on a workbench.",
+        "originalImage": "./assets/images/products/labeled-workbench-component-diagram-placeholder.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "storage",
+    "title": "Storage & Material Transport",
+    "description": "Carts, trolleys and storage stations that keep parts organised and moving between stations.",
+    "products": [
+      {
+        "name": "Material Transport Carts",
+        "description": "Tiered shelf carts for moving parts and sub-assemblies between stations.",
+        "originalImage": "./assets/images/products/tiered-shelf-material-carts-set-placeholder.png"
+      },
+      {
+        "name": "Mesh Transport Carts",
+        "description": "Mesh-sided carts for visible, ventilated part transport.",
+        "originalImage": "./assets/images/products/mesh-material-transport-carts-multiple-placeholder.png"
+      },
+      {
+        "name": "Roller Shelf Cart",
+        "description": "Cart with roller shelves for easy loading and unloading of cartons and bins.",
+        "originalImage": "./assets/images/products/roller-shelf-material-cart-placeholder.png"
+      },
+      {
+        "name": "Bin Tray Cart",
+        "description": "Cart with bin trays for sorting small components.",
+        "originalImage": "./assets/images/products/bin-tray-material-cart-placeholder.png"
+      },
+      {
+        "name": "Parts Bin Storage Trolley",
+        "description": "Trolleys with parts bins for organised line-side storage.",
+        "originalImage": "./assets/images/products/parts-bin-storage-trolley-pair-placeholder.png"
+      },
+      {
+        "name": "Tiered Tote Bin Trolley",
+        "description": "Multi-level tote-bin trolley for kitting and replenishment.",
+        "originalImage": "./assets/images/products/tiered-tote-bin-trolley-red-placeholder.png"
+      },
+      {
+        "name": "Pigeonhole Storage Station",
+        "description": "Assembly station with pigeonhole storage for sorted components.",
+        "originalImage": "./assets/images/products/assembly-station-pigeonhole-storage-placeholder.png"
+      },
+      {
+        "name": "Tiered Cart, Task Light",
+        "description": "Tiered cart with an integrated task light for work at the point of use.",
+        "originalImage": "./assets/images/products/tiered-cart-task-light-catalog-reference-placeholder.jpeg"
+      },
+      {
+        "name": "Tool Storage Cabinet",
+        "description": "Cabinet for secure tool and fixture storage near the workstation.",
+        "originalImage": "./assets/images/products/tool-storage-cabinet-catalog-reference-placeholder.jpeg"
+      }
+    ]
+  }
+]
