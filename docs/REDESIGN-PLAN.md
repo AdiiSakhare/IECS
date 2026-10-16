@@ -5,8 +5,8 @@ Pure white (#ffffff) backgrounds. Orange (#f05a28) as the primary brand colour; 
 
 ## Information architecture
 - Home: positioning, capabilities, product families, engineering approach, enquiry.
-- Products: five filterable families, dedicated family pages and individual pages for all 34 variants; quick-view dialogs remain available.
-- Services: grouped capabilities with short summaries, progressive disclosure and 19 dedicated service-detail pages.
+- Products: five filterable families with all 34 variants inside product dialogs; no separate product pages.
+- Services: 19 services grouped into expandable sections on a single Services page.
 - About: practical engineering approach and project process.
 - Contact: structured brief builder, copy/download; delivery activates only after real contact information is supplied.
 
@@ -27,12 +27,8 @@ For this draft, the user approved clearly marked sample contact information. The
 
 Needed for launch from client: original brief; approved contact details; actual product dimensions/specifications; approved brand logo; confirmation of services and founder story; real project evidence if case studies are desired. Existing logo files are preserved. This first implementation uses an IECS text wordmark until brand review.
 
-## Remaining-page build
-- [x] Add five product-family pages with complete configuration ranges.
-- [x] Add 34 product pages with recreated imagery, related equipment and prefilled enquiry links.
-- [x] Add 19 service pages with service-specific scope guidance and connected products.
-- [x] Connect all pages through breadcrumbs, catalogue links and service links.
-- [x] Validate relative URLs, image paths and anchors across all 63 pages.
+## Scope correction
+The 58 additional product-family, product and service-detail pages have been removed at the user's request. The site contains only Home, About, Services, Products and Contact. Product images and all catalogue/service content remain available inside the main pages. Build configuration and validation enforce the five-page structure.
 
 ## Validation
 Build and static integrity checks, browser coverage at 320/360/390/768/1024/1440px, navigation/filter/dialog/form checks, overflow checks, keyboard and reduced-motion checks. Results are recorded in docs/VALIDATION.md.

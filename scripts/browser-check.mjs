@@ -11,7 +11,7 @@ const pages=JSON.parse(fs.readFileSync(path.join(root,'dist/js/pages.json'),'utf
 const errors=[];const results=[];
 page.on('pageerror',e=>errors.push(e.message));
 page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`);});
-const representatives=['products/vision.html','products/vision/vision-testing-system.html','services/industrial-automation.html'];
+const representatives=['index.html','products.html','services.html','about.html','contact.html'];
 fs.mkdirSync(path.join(root,'artifacts'),{recursive:true});
 try{
  for(const width of (process.argv.includes('--flows-only')?[]:[320,390,768,1440])){
@@ -38,20 +38,18 @@ try{
  await page.locator('[data-filter="vision"]').click();assert.equal(await page.locator('.catalog-grid .product-card:visible').count(),1);
  await page.locator('[data-product="vision"]').click();await page.waitForSelector('dialog[open]');assert.equal(await page.locator('.variant').count(),3);
  await page.keyboard.press('Escape');await page.waitForFunction(()=>document.activeElement===document.querySelector('[data-product="vision"]'));
- await page.locator('.catalog-grid .product-open:visible').click();assert(page.url().endsWith('/products/vision.html'));
- await page.locator('.range-card a').first().click();assert(page.url().endsWith('/products/vision/vision-testing-system.html'));
- assert.equal(await page.locator('.breadcrumbs a').nth(2).evaluate(el=>el.href),new URL('products/vision.html',base).href);
- await page.locator('.product-detail-hero .button').click();assert((await page.locator('[name="interest"]').inputValue())==='Vision Testing System');
+ await page.locator('.catalog-grid .product-open:visible').click();await page.waitForSelector('dialog[open]');
+ await page.locator('.variant .text-link').first().click();assert((await page.locator('[name="interest"]').inputValue())==='Vision Testing System');
  await page.locator('[name="name"]').fill('Test Engineer');await page.locator('[name="email"]').fill('engineer@example.com');await page.locator('[name="message"]').fill('We need to inspect components after assembly.');await page.locator('button[type="submit"]').click();assert(await page.locator('#brief-result').isVisible());
  const download=page.waitForEvent('download');await page.locator('#download-brief').click();assert.equal((await download).suggestedFilename(),'IECS-project-brief.txt');
- results.push('Catalogue → family → product → prefilled enquiry → brief download passed; quick view and focus restoration passed');
- await page.goto(new URL('services.html',base).href);await page.locator('summary').first().click();await page.getByRole('link',{name:'Explore this service'}).first().click();assert(page.url().endsWith('/services/industrial-automation.html'));
+ results.push('Catalogue → product dialog → prefilled enquiry → brief download passed; dialog focus restoration passed');
+ await page.goto(new URL('services.html',base).href);await page.locator('summary').first().click();assert.equal(await page.locator('details').count(),19);
  await page.locator('.menu-toggle').click();await page.keyboard.press('Escape');assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');assert(await page.locator('.menu-toggle').evaluate(el=>el===document.activeElement));
- await page.locator('.service-detail-hero .button').click();assert.equal(await page.locator('[name="interest"]').inputValue(),'Industrial Automation');
- results.push('Services → service detail → prefilled enquiry passed; mobile menu Escape and focus restoration passed on nested pages');
- await page.goto(new URL('products/vision.html',base).href);await page.emulateMedia({reducedMotion:'reduce'});assert.equal(await page.locator('html').evaluate(el=>getComputedStyle(el).scrollBehavior),'auto');
- results.push('Reduced-motion preference respected on nested pages');
+ await page.getByRole('link',{name:'Discuss your requirement'}).first().click();assert.equal(await page.locator('[name="interest"]').inputValue(),'Industrial Automation');
+ results.push('Services accordion → prefilled enquiry passed; mobile menu Escape and focus restoration passed');
+ await page.goto(new URL('products.html',base).href);await page.emulateMedia({reducedMotion:'reduce'});assert.equal(await page.locator('html').evaluate(el=>getComputedStyle(el).scrollBehavior),'auto');
+ results.push('Reduced-motion preference respected');
  assert.deepEqual(errors,[],'No browser errors or failed asset requests');results.push('No JavaScript errors or failed asset requests');
- fs.writeFileSync(path.join(root,'artifacts/remaining-pages-browser-results.json'),JSON.stringify(results,null,2));
+ fs.writeFileSync(path.join(root,'artifacts/main-pages-browser-results.json'),JSON.stringify(results,null,2));
  console.log(results.join('\n'));
 }finally{await browser.close();}

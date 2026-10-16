@@ -5,7 +5,7 @@ Validated on 16 October 2026 in Chromium.
 ## Completed checks
 
 - `npm run build`: five static pages generated successfully.
-- `npm run check`: 115 local asset/page references resolved; every catalogue entry has its recreated image; all 34 variants retained; all 35 archived product references preserved; archived imagery excluded from `dist/`.
+- `npm run check`: 130 local asset/page references resolved; every catalogue entry has its recreated image; all 34 variants retained; all 35 archived product references preserved; archived imagery excluded from `dist/`.
 - JavaScript syntax checks passed for the build script, site interactions and preview server.
 - All five pages checked at 320, 360, 390, 768, 1024 and 1440 pixels: pure white body backgrounds and no horizontal page overflow.
 - No JavaScript page errors or HTTP asset failures in the browser run.
@@ -28,12 +28,8 @@ This is a local review build. Cross-browser and real-device testing remain befor
 
 The contact details are intentionally marked placeholders. The enquiry tool prepares a local brief only. Replace the sample contact values in `config/site.json` and connect an approved delivery service before offering online enquiry submission. Final brand/logo and client brief confirmation are still needed.
 
-## Remaining-page build
+## Scope correction
 
-- Generated 58 additional pages: five product-family pages, 34 product pages and 19 service-detail pages. Total: 63.
-- Static validation passed for 1,993 page and asset references, including cross-page anchors, nested relative paths and all catalogue-to-detail mappings.
-- Browser checks loaded all 63 pages at 320, 390, 768 and 1440 pixels: pure white backgrounds, one main heading and no horizontal overflow.
-- Product-family, individual-product and service-detail screenshots were reviewed on desktop and mobile.
-- Reproducible browser checks are in `scripts/browser-check.mjs`. The build and normal static checks require no dependencies; browser checks require Playwright.
-- Click-through checks passed: catalogue → family → individual product → prefilled enquiry → brief download; services → service detail → prefilled enquiry.
-- Quick-view dialog closing/focus restoration, nested-page mobile navigation and reduced-motion behavior passed. No JavaScript errors or failed asset requests occurred in the final flow checks.
+Removed all 58 extra pages and their generator. The build now produces exactly five pages. Static checks validate 130 links/assets and confirm that the removed product/service page directories are absent from both the source and production output. All 34 product configurations and their recreated images remain in the product dialogs; all 19 services remain on the Services page. The browser checks now cover these in-page flows.
+
+After removal, browser checks passed for all five pages at 320, 390, 768 and 1440 pixels. Product dialogs, filters, service accordions, prefilled enquiries, brief download, menu/dialog focus restoration and reduced-motion behavior passed. No JavaScript errors or failed asset requests were observed.

@@ -1,6 +1,6 @@
 # IECS website
 
-63 static pages: five main pages, five product-family pages, 34 individual product pages and 19 service-detail pages. A complete redesign with pure white backgrounds, orange accents, self-hosted Manrope and IBM Plex Mono, responsive layouts and reduced-motion support.
+Five pages: Home, About, Services, Products and Contact. A complete redesign with pure white backgrounds, orange accents, self-hosted Manrope and IBM Plex Mono, responsive layouts and reduced-motion support.
 
 ## Run locally
 
@@ -20,8 +20,7 @@ npm run check
 ## Editing
 
 - `config/site.json`: clearly marked sample contact information. Replace it with approved details before launch.
-- `scripts/build.mjs`: shared page templates, family summaries, navigation and copy. Running the build regenerates all 63 HTML pages, `js/catalog.json` and the page inventory in `js/pages.json`.
-- `scripts/detail-pages.mjs`: dedicated family, product and service pages, related offerings and application planning copy.
+- `scripts/build.mjs`: shared page templates, family summaries, navigation and copy. Running the build regenerates all five HTML pages, `js/catalog.json` and the page inventory in `js/pages.json`.
 - `css/site.css`: design tokens and responsive layouts.
 - `js/site.js`: navigation, filters, native product dialogs, service interactions and project brief export.
 - `docs/original-catalog.json` and `docs/original-services.json`: recovered source content. Product descriptions are draft material pending client confirmation.
@@ -39,7 +38,7 @@ With Playwright installed and the preview server running:
 npm run check:browser
 ```
 
-Optional environment variables: `CHROMIUM_PATH` for an existing Chromium executable, `PLAYWRIGHT_MODULE` for a provisioned Playwright module and `PREVIEW_URL` for another local preview address. The check covers every page at 320, 390, 768 and 1440 pixels, then follows product/service links into the prefilled enquiry flow. `--flows-only` reruns just those interactions.
+Optional environment variables: `CHROMIUM_PATH` for an existing Chromium executable, `PLAYWRIGHT_MODULE` for a provisioned Playwright module and `PREVIEW_URL` for another local preview address. The check covers every page at 320, 390, 768 and 1440 pixels, then follows product dialogs and service accordions into the prefilled enquiry flow. `--flows-only` reruns just those interactions.
 
 ## Contact behavior
 

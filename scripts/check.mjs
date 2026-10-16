@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 const root=path.resolve('dist');
 const pages=JSON.parse(fs.readFileSync('dist/js/pages.json','utf8'));
 const counts=Object.fromEntries(['main','family','product','service'].map(type=>[type,pages.filter(p=>p.type===type).length]));
-assert.deepEqual(counts,{main:5,family:5,product:34,service:19});
+assert.deepEqual(counts,{main:5,family:0,product:0,service:0});
 assert.equal(new Set(pages.map(p=>p.url)).size,pages.length,'Page URLs must be unique');
 let checked=0;
 for(const {url:route} of pages){
@@ -29,15 +29,14 @@ for(const {url:route} of pages){
 const catalog=JSON.parse(fs.readFileSync('dist/js/catalog.json','utf8'));
 assert.equal(catalog.length,5);assert.equal(catalog.flatMap(f=>f.variants).length,34);
 for(const f of catalog){
- assert(fs.existsSync(path.join(root,f.url)),`${f.name}: missing family page`);
  assert(fs.existsSync(`dist/assets/generated/${f.image}.webp`));
  for(const v of f.variants){
   assert(v.image,`${v.name}: missing image mapping`);
   assert(fs.existsSync(path.join(root,v.image)),`${v.name}: missing recreated image`);
-  assert(fs.existsSync(path.join(root,v.url)),`${v.name}: missing product page`);
  }
 }
 assert.equal(fs.readdirSync('assets/trash/products-old-images').length,35);
 assert(!fs.existsSync('dist/assets/trash'));
+for(const folder of ['products','services']){assert(!fs.existsSync(folder),`${folder}: removed page directory must stay absent`);assert(!fs.existsSync(path.join(root,folder)),`${folder}: removed pages must not be deployed`);}
 const css=fs.readFileSync('css/site.css','utf8');assert(css.includes('prefers-reduced-motion'));assert(css.includes('background:#fff'));
 console.log(`Static checks passed: ${pages.length} pages, ${checked} links/assets, 34 recreated products, all anchors resolved, archived assets excluded.`);
