@@ -33,3 +33,9 @@ The contact details are intentionally marked placeholders. The enquiry tool prep
 Removed all 58 extra pages and their generator. The build now produces exactly five pages. Static checks validate 130 links/assets and confirm that the removed product/service page directories are absent from both the source and production output. All 34 product configurations and their recreated images remain in the product dialogs; all 19 services remain on the Services page. The browser checks now cover these in-page flows.
 
 After removal, browser checks passed for all five pages at 320, 390, 768 and 1440 pixels. Product dialogs, filters, service accordions, prefilled enquiries, brief download, menu/dialog focus restoration and reduced-motion behavior passed. No JavaScript errors or failed asset requests were observed.
+
+## Static Contact page — 17 October 2026
+
+Removed the enquiry form, its copy/download brief controls, and all related JavaScript. Contact now displays email, phone and address. Sample details remain labelled; approved details can use ordinary mailto/tel links through config/site.json. Product and service enquiry links open the Contact page directly. No backend is required.
+
+Browser checks passed on all five pages at 320, 390, 768 and 1440 pixels. The contact page contains no form or input controls, and product-dialog/service-accordion links reach the contact directory. No JavaScript errors, failed asset requests or horizontal overflow were observed.

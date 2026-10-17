@@ -39,14 +39,12 @@ try{
  await page.locator('[data-product="vision"]').click();await page.waitForSelector('dialog[open]');assert.equal(await page.locator('.variant').count(),3);
  await page.keyboard.press('Escape');await page.waitForFunction(()=>document.activeElement===document.querySelector('[data-product="vision"]'));
  await page.locator('.catalog-grid .product-open:visible').click();await page.waitForSelector('dialog[open]');
- await page.locator('.variant .text-link').first().click();assert((await page.locator('[name="interest"]').inputValue())==='Vision Testing System');
- await page.locator('[name="name"]').fill('Test Engineer');await page.locator('[name="email"]').fill('engineer@example.com');await page.locator('[name="message"]').fill('We need to inspect components after assembly.');await page.locator('button[type="submit"]').click();assert(await page.locator('#brief-result').isVisible());
- const download=page.waitForEvent('download');await page.locator('#download-brief').click();assert.equal((await download).suggestedFilename(),'IECS-project-brief.txt');
- results.push('Catalogue → product dialog → prefilled enquiry → brief download passed; dialog focus restoration passed');
+ await page.locator('.variant .text-link').first().click();assert(page.url().endsWith('/contact.html'));assert.equal(await page.locator('form,input,select,textarea').count(),0);assert(await page.locator('#contact-details-title').isVisible());
+ results.push('Catalogue → product dialog → contact details passed; form absent; dialog focus restoration passed');
  await page.goto(new URL('services.html',base).href);await page.locator('summary').first().click();assert.equal(await page.locator('details').count(),19);
  await page.locator('.menu-toggle').click();await page.keyboard.press('Escape');assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');assert(await page.locator('.menu-toggle').evaluate(el=>el===document.activeElement));
- await page.getByRole('link',{name:'Discuss your requirement'}).first().click();assert.equal(await page.locator('[name="interest"]').inputValue(),'Industrial Automation');
- results.push('Services accordion → prefilled enquiry passed; mobile menu Escape and focus restoration passed');
+ await page.getByRole('link',{name:'Discuss your requirement'}).first().click();assert(page.url().endsWith('/contact.html'));assert(await page.locator('#contact-details-title').isVisible());
+ results.push('Services accordion → contact details passed; mobile menu Escape and focus restoration passed');
  await page.goto(new URL('products.html',base).href);await page.emulateMedia({reducedMotion:'reduce'});assert.equal(await page.locator('html').evaluate(el=>getComputedStyle(el).scrollBehavior),'auto');
  results.push('Reduced-motion preference respected');
  assert.deepEqual(errors,[],'No browser errors or failed asset requests');results.push('No JavaScript errors or failed asset requests');

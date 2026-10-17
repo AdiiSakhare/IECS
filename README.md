@@ -22,7 +22,7 @@ npm run check
 - `config/site.json`: clearly marked sample contact information. Replace it with approved details before launch.
 - `scripts/build.mjs`: shared page templates, family summaries, navigation and copy. Running the build regenerates all five HTML pages, `js/catalog.json` and the page inventory in `js/pages.json`.
 - `css/site.css`: design tokens and responsive layouts.
-- `js/site.js`: navigation, filters, native product dialogs, service interactions and project brief export.
+- `js/site.js`: navigation, filters, native product dialogs, and service interactions.
 - `docs/original-catalog.json` and `docs/original-services.json`: recovered source content. Product descriptions are draft material pending client confirmation.
 - `assets/generated/`: optimized new visuals; originals remain in `/workspace/generated_images` in the creation workspace.
 - `assets/trash/products-old-images/`: all 35 original reference images (34 used in the catalogue), excluded from the production build.
@@ -38,11 +38,11 @@ With Playwright installed and the preview server running:
 npm run check:browser
 ```
 
-Optional environment variables: `CHROMIUM_PATH` for an existing Chromium executable, `PLAYWRIGHT_MODULE` for a provisioned Playwright module and `PREVIEW_URL` for another local preview address. The check covers every page at 320, 390, 768 and 1440 pixels, then follows product dialogs and service accordions into the prefilled enquiry flow. `--flows-only` reruns just those interactions.
+Optional environment variables: `CHROMIUM_PATH` for an existing Chromium executable, `PLAYWRIGHT_MODULE` for a provisioned Playwright module and `PREVIEW_URL` for another local preview address. The check covers every page at 320, 390, 768 and 1440 pixels, then follows product dialogs and service accordions to the Contact page. `--flows-only` reruns just those interactions.
 
 ## Contact behavior
 
-The brief builder validates required fields and allows visitors to copy or download their details. It does not submit personal data, save it on a server, or claim delivery. Contact details are explicitly marked preview placeholders, as requested. The sample email uses the reserved `.example` domain. Connect an approved delivery service only after receiving genuine contact details and data handling requirements.
+The Contact page is a static directory with email, phone and address. There is no enquiry form, brief export, submission handler or backend requirement. Contact values live in `config/site.json`. Preview placeholders are clearly labelled and remain plain text; replacing them with approved values and setting `isPlaceholder` to `false` enables standard email and phone links. The site supports GitHub Pages, including hosting under a repository subpath or a custom domain.
 
 ## Product images
 

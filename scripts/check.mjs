@@ -26,6 +26,9 @@ for(const {url:route} of pages){
   checked++;
  }
 }
+const contact=fs.readFileSync(path.join(root,'contact.html'),'utf8');
+assert(!/<(?:form|input|textarea|select)\b|brief-result|enquiry-form/.test(contact),'Contact page must not contain the removed form');
+assert(contact.includes('contact-details-title'),'Contact details must be present');
 const catalog=JSON.parse(fs.readFileSync('dist/js/catalog.json','utf8'));
 assert.equal(catalog.length,5);assert.equal(catalog.flatMap(f=>f.variants).length,34);
 for(const f of catalog){
