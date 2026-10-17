@@ -1,0 +1,13 @@
+{
+  "purpose": "Four distinct inner-page hero image assets for IECS",
+  "status": "Generated and visually reviewed; ready for placement in page layouts",
+  "format": "Native-resolution PNG originals and quality-94 WebP exports",
+  "artDirection": "Neutral daylight, white industrial interiors, silver aluminum, graphite and restrained orange details",
+  "images": [
+    {"page":"Services","original":"assets/hero-masters/services.png","web":"assets/generated/heroes/services.webp","width":1672,"height":940,"description":"Automation cell, conveyor and electrical control cabinet"},
+    {"page":"Products","original":"assets/hero-masters/products.png","web":"assets/generated/heroes/products.webp","width":1672,"height":941,"description":"Reference-based arrangement of the existing vision station, teal conveyor and assembly workbench"},
+    {"page":"About","original":"assets/hero-masters/about.png","web":"assets/generated/heroes/about.webp","width":1672,"height":941,"description":"Engineering design bench with frame assembly, CAD view and measurement tools"},
+    {"page":"Contact","original":"assets/hero-masters/contact.png","web":"assets/generated/heroes/contact.webp","width":1672,"height":941,"description":"Restrained precision-frame connection close-up"}
+  ],
+  "review": "Illustrative generated scenes, not photographs of IECS premises or completed installations. Product geometry was guided by references; visual review is not technical validation."
+}
