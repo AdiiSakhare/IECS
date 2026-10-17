@@ -1,5 +1,7 @@
 # IECS redesign
 
+> Historical redesign record. Current client-aligned scope and validation are documented in [CLIENT-ALIGNMENT.md](CLIENT-ALIGNMENT.md). Catalogue counts, service counts and contact flows below describe the earlier redesign.
+
 ## Direction
 Pure white (#ffffff) backgrounds. Orange (#f05a28) as the primary brand colour; charcoal text, neutral grey rules. Spacious editorial composition, precision industrial photography, Manrope typography and IBM Plex Mono technical captions. White page backgrounds stay white at every breakpoint. Motion supports orientation: short transitions, subtle reveals, no scroll hijacking or decorative looping counters.
 

@@ -1,0 +1,124 @@
+[
+  {
+    "id": "machines",
+    "name": "Machines & tooling",
+    "desc": "Special-purpose machines, press machines and dedicated tooling developed around the manufacturing operation.",
+    "image": "machines",
+    "tags": "SPMs · Press machines · Fixtures",
+    "variants": [
+      {
+        "name": "Special-purpose machines",
+        "description": "Design, development, building and assembly of complete machines for specific production requirements."
+      },
+      {
+        "name": "Press machines",
+        "description": "Press machine solutions developed around the component and pressing operation."
+      },
+      {
+        "name": "Mechanical tooling & fixtures",
+        "description": "Mechanical tools, special assembly tools, jigs, checking fixtures and fixturing solutions."
+      },
+      {
+        "name": "Prototyping & sample development",
+        "description": "Prototype and sample development to support new components and manufacturing processes."
+      }
+    ]
+  },
+  {
+    "id": "controls",
+    "name": "Panels & control systems",
+    "desc": "Electrical panels, PLC and control software, and hydraulic and pneumatic control systems.",
+    "image": "heroes/services",
+    "tags": "Electrical panels · PLC · Fluid controls",
+    "variants": [
+      {
+        "name": "Control & LT / HT panels",
+        "description": "Process control panels and LT and HT electrical panel design and development, including panel wiring."
+      },
+      {
+        "name": "PLC & control software",
+        "description": "PLC automation and control software design and development for machines and assembly processes."
+      },
+      {
+        "name": "Hydraulic & pneumatic controls",
+        "description": "Hydraulic and pneumatic system control design and development."
+      },
+      {
+        "name": "Industrial wiring & pipelines",
+        "description": "Industrial DB wiring, electrical cabling and pneumatic pipeline work."
+      }
+    ]
+  },
+  {
+    "id": "testing",
+    "name": "Testing & traceability",
+    "desc": "Testing setups, end-of-line machines, barcode scanning and process-data traceability solutions.",
+    "image": "vision",
+    "tags": "EOL testing · Identification · Data",
+    "variants": [
+      {
+        "name": "Testing setups & EOL machines",
+        "description": "Design and development of testing setups and end-of-line testing machines for production checks."
+      },
+      {
+        "name": "Barcode scanning systems",
+        "description": "Barcode scanning to support identification and traceability within the manufacturing process."
+      },
+      {
+        "name": "Process & data traceability",
+        "description": "Solutions for recording and tracking process parameters and production data."
+      }
+    ]
+  },
+  {
+    "id": "conveyors",
+    "name": "Assembly lines & conveyors",
+    "desc": "Assembly and conveyor setups with special tools and Poka-Yoke provisions to suit the process.",
+    "image": "conveyors",
+    "tags": "Assembly · Conveyors · Poka-Yoke",
+    "variants": [
+      {
+        "name": "Assembly line setup",
+        "description": "Assembly process layouts and setups with special tooling and engineering controls."
+      },
+      {
+        "name": "Conveyor automation",
+        "description": "Assembly conveyor setup with Poka-Yoke mistake-proofing provisions."
+      }
+    ]
+  },
+  {
+    "id": "workspaces",
+    "name": "Workstations & safety",
+    "desc": "Ergonomic workspaces, machinery safety interlocks and guarding provisions for production operations.",
+    "image": "workbenches",
+    "tags": "Ergonomics · Interlocks · Guarding",
+    "variants": [
+      {
+        "name": "Ergonomic workstations",
+        "description": "Workstations and ergonomic solutions designed around the operator and assembly task."
+      },
+      {
+        "name": "Machine safety provisions",
+        "description": "Machinery safety interlocks and guarding provisions for production equipment."
+      }
+    ]
+  },
+  {
+    "id": "storage",
+    "name": "Storage & material handling",
+    "desc": "Custom racks, bins, special trolleys and material-handling solutions for the factory floor.",
+    "image": "storage",
+    "tags": "Racks · Bins · Special trolleys",
+    "variants": [
+      {
+        "name": "Storage racks & bins",
+        "description": "Storage racks and bins designed and built for parts organisation and manufacturing setups."
+      },
+      {
+        "name": "Special trolleys & material handling",
+        "description": "Special trolley development and material-handling solutions to support movement of parts."
+      }
+    ]
+  }
+]

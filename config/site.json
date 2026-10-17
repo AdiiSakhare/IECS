@@ -1,8 +1,10 @@
 {
   "contact": {
-    "isPlaceholder": true,
-    "email": "hello@iecs.example",
-    "phone": "+91 00000 00000",
-    "address": "123 Industrial Road, Pune, Maharashtra, India"
+    "isPlaceholder": false,
+    "name": "Prasad Bhole",
+    "email": "iecs.control@gmail.com",
+    "phone": "+91 95273 80281",
+    "address": "S. No. 121, Sadguru Nagar, Kate Estate, Bhosari, Pune, Maharashtra - 411039",
+    "gstin": "27FQBPB1436F1ZB"
   }
 }

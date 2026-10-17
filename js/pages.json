@@ -1,27 +1,27 @@
 [
   {
     "url": "index.html",
-    "title": "IECS — Practical engineering. Better production.",
+    "title": "IECS — Industrial Engineering in Bhosari, Pune",
     "type": "main"
   },
   {
     "url": "products.html",
-    "title": "Products — IECS",
+    "title": "Custom Equipment — IECS",
     "type": "main"
   },
   {
     "url": "services.html",
-    "title": "Services — IECS",
+    "title": "Industrial Engineering Services — IECS",
     "type": "main"
   },
   {
     "url": "about.html",
-    "title": "About — IECS",
+    "title": "About IECS — Industrial Engineering Control Services",
     "type": "main"
   },
   {
     "url": "contact.html",
-    "title": "Start a conversation — IECS",
+    "title": "Contact Prasad Bhole — IECS, Bhosari, Pune",
     "type": "main"
   }
 ]

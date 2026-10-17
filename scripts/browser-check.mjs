@@ -33,15 +33,29 @@ try{
   const result=`All ${pages.length} pages at ${width}px: loaded, pure white background, one heading, no horizontal overflow`;
   results.push(result);console.log(result);
  }
+ await page.goto(new URL('products.html',base).href);
+ const catalog=JSON.parse(fs.readFileSync(path.join(root,'dist/js/catalog.json'),'utf8'));
+ for(const family of catalog){
+  await page.locator(`[data-filter="${family.id}"]`).click();
+  assert.equal(await page.locator('.catalog-grid .product-card:visible').count(),1);
+  await page.locator(`[data-product="${family.id}"]`).click();
+  await page.waitForSelector('dialog[open]');
+  assert.equal(await page.locator('#dialog-title').textContent(),family.name);
+  assert.equal(await page.locator('.variant').count(),family.variants.length);
+  await page.locator('.dialog-close').click();
+ }
+ results.push('All six equipment filters and capability dialogs passed');
  await page.setViewportSize({width:390,height:844});
  await page.goto(new URL('products.html',base).href);
- await page.locator('[data-filter="vision"]').click();assert.equal(await page.locator('.catalog-grid .product-card:visible').count(),1);
- await page.locator('[data-product="vision"]').click();await page.waitForSelector('dialog[open]');assert.equal(await page.locator('.variant').count(),3);
- await page.keyboard.press('Escape');await page.waitForFunction(()=>document.activeElement===document.querySelector('[data-product="vision"]'));
+ await page.locator('[data-filter="testing"]').click();assert.equal(await page.locator('.catalog-grid .product-card:visible').count(),1);
+ await page.locator('[data-product="testing"]').click();await page.waitForSelector('dialog[open]');assert.equal(await page.locator('.variant').count(),3);
+ await page.keyboard.press('Escape');await page.waitForFunction(()=>document.activeElement===document.querySelector('[data-product="testing"]'));
  await page.locator('.catalog-grid .product-open:visible').click();await page.waitForSelector('dialog[open]');
  await page.locator('.variant .text-link').first().click();assert(page.url().endsWith('/contact.html'));assert.equal(await page.locator('form,input,select,textarea').count(),0);assert(await page.locator('#contact-details-title').isVisible());
+ assert.equal(await page.locator('.contact-directory a[href^="tel:"]').getAttribute('href'),'tel:+919527380281');
+ assert.equal(await page.locator('.contact-directory a[href^="mailto:"]').getAttribute('href'),'mailto:iecs.control@gmail.com');
  results.push('Catalogue → product dialog → contact details passed; form absent; dialog focus restoration passed');
- await page.goto(new URL('services.html',base).href);await page.locator('summary').first().click();assert.equal(await page.locator('details').count(),19);
+ await page.goto(new URL('services.html',base).href);await page.locator('summary').first().click();assert.equal(await page.locator('details').count(),23);
  await page.locator('.menu-toggle').click();await page.keyboard.press('Escape');assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');assert(await page.locator('.menu-toggle').evaluate(el=>el===document.activeElement));
  await page.getByRole('link',{name:'Discuss your requirement'}).first().click();assert(page.url().endsWith('/contact.html'));assert(await page.locator('#contact-details-title').isVisible());
  results.push('Services accordion → contact details passed; mobile menu Escape and focus restoration passed');

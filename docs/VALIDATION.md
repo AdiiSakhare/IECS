@@ -1,5 +1,7 @@
 # IECS redesign validation
 
+> Historical redesign record. Current client-aligned scope and validation are documented in [CLIENT-ALIGNMENT.md](CLIENT-ALIGNMENT.md). Catalogue counts, service counts and contact flows below describe the earlier redesign.
+
 Validated on 16 October 2026 in Chromium.
 
 ## Completed checks

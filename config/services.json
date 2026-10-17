@@ -1,0 +1,136 @@
+[
+  {
+    "id": "automation",
+    "title": "Automation & Controls",
+    "desc": "Manufacturing processes, assembly controls and control software developed around production needs.",
+    "items": [
+      {
+        "title": "Industrial & Low-Cost Automation",
+        "description": "Automation solutions developed around manufacturing processes and assembly operations."
+      },
+      {
+        "title": "PLC & Control Software",
+        "description": "PLC automation and control software design and development for machines and production processes."
+      },
+      {
+        "title": "Manufacturing Process Development",
+        "description": "Design and development of new manufacturing processes, including engineering control solutions for assembly."
+      },
+      {
+        "title": "Assembly Controls & Poka-Yoke",
+        "description": "Control solutions and mistake-proofing provisions for assembly lines and conveyor operations."
+      }
+    ]
+  },
+  {
+    "id": "machines",
+    "title": "Machines & Tooling",
+    "desc": "Complete machine building, dedicated tooling and development for your component and process.",
+    "items": [
+      {
+        "title": "Special-Purpose & Custom Machines",
+        "description": "Design, development, building and assembly of complete machines for specific production requirements."
+      },
+      {
+        "title": "Press Machines",
+        "description": "Press machine solutions developed around the component and pressing operation."
+      },
+      {
+        "title": "Mechanical Tooling & Fixtures",
+        "description": "Design and development of mechanical tools, assembly tools, jigs, checking fixtures and fixturing solutions."
+      },
+      {
+        "title": "Prototyping & Sample Development",
+        "description": "Prototype and sample development to support new components and manufacturing processes."
+      }
+    ]
+  },
+  {
+    "id": "testing",
+    "title": "Testing & Traceability",
+    "desc": "Production checks, part identification and process-data traceability.",
+    "items": [
+      {
+        "title": "Testing Setups & EOL Machines",
+        "description": "Design and development of testing setups and end-of-line testing machines for production quality checks."
+      },
+      {
+        "title": "Process & Data Traceability",
+        "description": "Traceability solutions for recording and tracking process parameters and production data."
+      },
+      {
+        "title": "Barcode Scanning Systems",
+        "description": "Barcode scanning systems to support identification and traceability within the manufacturing process."
+      }
+    ]
+  },
+  {
+    "id": "electrical",
+    "title": "Electrical & Fluid Systems",
+    "desc": "Panels, industrial wiring and fluid-system controls for manufacturing equipment.",
+    "items": [
+      {
+        "title": "Control Panels & LT / HT Panels",
+        "description": "Design and development of process control panels and LT and HT electrical panels, including control panel wiring."
+      },
+      {
+        "title": "Industrial Wiring & Electrical Cabling",
+        "description": "Industrial electrical distribution board (DB) wiring, electrical cabling and associated electrical work."
+      },
+      {
+        "title": "Hydraulic & Pneumatic Controls",
+        "description": "Design and development of hydraulic and pneumatic system controls for industrial applications."
+      },
+      {
+        "title": "Pneumatic Pipelines",
+        "description": "Pneumatic pipeline work for industrial equipment and manufacturing setups."
+      }
+    ]
+  },
+  {
+    "id": "production",
+    "title": "Production & Material Handling",
+    "desc": "Assembly setups, ergonomic solutions, safety provisions and material movement.",
+    "items": [
+      {
+        "title": "Assembly Lines & Conveyors",
+        "description": "Assembly line and conveyor setup with special tools and Poka-Yoke provisions to suit the process."
+      },
+      {
+        "title": "Ergonomic Workstations & Safety",
+        "description": "Ergonomic solutions for assembly operations, with machinery safety interlocks and guarding provisions."
+      },
+      {
+        "title": "Storage & Material Handling",
+        "description": "Design and build of storage racks, bins, special trolleys and material-handling solutions."
+      },
+      {
+        "title": "Fabrication & Engineering Works",
+        "description": "Fabrication and engineering work for custom equipment, supports and manufacturing setups."
+      }
+    ]
+  },
+  {
+    "id": "support",
+    "title": "Installation & Plant Support",
+    "desc": "Installation, maintenance and relocation services across the equipment lifecycle.",
+    "items": [
+      {
+        "title": "Machine Installation & Commissioning",
+        "description": "Installation and commissioning of new machines and production equipment."
+      },
+      {
+        "title": "Annual Plant Maintenance",
+        "description": "Annual maintenance services for plant equipment and manufacturing machinery."
+      },
+      {
+        "title": "Machine & Plant Relocation",
+        "description": "Machine relocation and shifting of manufacturing setups and industrial projects."
+      },
+      {
+        "title": "Hoists & Jib Crane Installation",
+        "description": "Installation and commissioning of lifting hoists and jib cranes."
+      }
+    ]
+  }
+]
