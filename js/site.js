@@ -11,6 +11,30 @@ menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')
 nav.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.hasAttribute('data-open'))closeMenu(true);if(e.key==='Tab'&&nav.hasAttribute('data-open')){const focusable=[menu,...$$('a',nav)];const first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
 matchMedia('(min-width:761px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
+// Keep the capability index aligned with the section at the reading position.
+const serviceLinks=$$('.service-index a');
+if(serviceLinks.length){
+ const serviceSections=serviceLinks.map(link=>document.getElementById(link.hash.slice(1)));
+ let activeService=null,serviceFrame=0;
+ function updateActiveService(){
+  serviceFrame=0;
+  const top=$('.site-header').getBoundingClientRect().bottom+16;
+  const readingLine=top+(innerHeight-top)*.25;
+  const visible=serviceSections.map(section=>({section,rect:section.getBoundingClientRect()})).filter(({rect})=>rect.bottom>top&&rect.top<innerHeight);
+  const current=(visible.find(({rect})=>rect.top<=readingLine&&rect.bottom>readingLine)||visible[0])?.section.id||null;
+  if(current===activeService)return;
+  activeService=current;
+  serviceLinks.forEach(link=>{
+   if(link.hash==='#'+current)link.setAttribute('aria-current','location');
+   else link.removeAttribute('aria-current');
+  });
+ }
+ function scheduleServiceUpdate(){if(!serviceFrame)serviceFrame=requestAnimationFrame(updateActiveService);}
+ addEventListener('scroll',scheduleServiceUpdate,{passive:true});
+ addEventListener('resize',scheduleServiceUpdate);
+ if('ResizeObserver'in window){const observer=new ResizeObserver(scheduleServiceUpdate);serviceSections.forEach(section=>observer.observe(section));}
+ updateActiveService();
+}
 const filters=$$('[data-filter]');
 function setFilter(id){const selected=filters.some(b=>b.dataset.filter===id)?id:'all';filters.forEach(b=>{const active=b.dataset.filter===selected;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});$$('.catalog-grid .product-card').forEach(c=>{c.hidden=selected!=='all'&&c.dataset.family!==selected;});const count=$$('.catalog-grid .product-card:not([hidden])').length;const result=$('.catalog-result');if(result)result.textContent=`${count} equipment ${count===1?'group':'groups'}`;}
 filters.forEach(b=>b.addEventListener('click',()=>{setFilter(b.dataset.filter);history.replaceState(null,'',b.dataset.filter==='all'?location.pathname:'#'+b.dataset.filter);}));
