@@ -28,12 +28,9 @@ npm run check:content
 - `scripts/build.mjs`: shared page templates, family summaries, navigation and copy. Running the build regenerates all five HTML pages, `js/catalog.json` and the page inventory in `js/pages.json`.
 - `css/site.css`: design tokens and responsive layouts.
 - `js/site.js`: navigation, equipment filters, native capability dialogs, and service interactions.
-- `docs/original-catalog.json` and `docs/original-services.json`: archived source material; these are no longer used as publishing inputs. The current client-aligned content lives in `config/`.
 - `assets/generated/`: optimized new visuals; originals remain in `/workspace/generated_images` in the creation workspace.
-- `assets/trash/products-old-images/`: all 35 original reference images (34 used in the catalogue), excluded from the production build.
-- `docs/REDESIGN-PLAN.md`: design direction, scope and launch requirements.
 
-Deploy **only `dist/`** to any static host. Do not publish the repository root: it contains archived reference imagery and internal review documents. No live deployment has been configured.
+For a build-based deployment, publish **`dist/`**. GitHub Pages can also serve the committed five HTML pages and their public assets from the branch root. All release branches must contain the same reviewed website before switching the publishing branch. The repository root also contains internal review documents; `dist/` contains only deployable files.
 
 ## Browser checks
 
@@ -51,4 +48,4 @@ The Contact page is a static directory with email, phone and address. There is n
 
 ## Equipment imagery
 
-The existing visual direction is preserved. Generated imagery illustrates equipment concepts; it is not evidence of completed IECS projects, exact product specifications or commercial configurations. The capability catalogue uses client-documented descriptions instead of inferring features from the images. Individual variants intentionally have no images when no suitable illustration is available. Existing generated assets remain available, while archived originals and internal documents remain excluded from `dist/`.
+The existing visual direction is preserved. Generated imagery illustrates equipment concepts; it is not evidence of completed IECS projects, exact product specifications or commercial configurations. The capability catalogue uses client-documented descriptions instead of inferring features from the images. Individual variants intentionally have no images when no suitable illustration is available. Retired site code, reference pages and unused product assets have been removed. Internal documents remain excluded from `dist/`.

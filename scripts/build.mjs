@@ -51,9 +51,9 @@ fs.writeFileSync(`${name}.html`,html.replace(/((?:href|src)=")(?!#|https?:|mailt
 }
 fs.writeFileSync('js/catalog.json',JSON.stringify(families,null,2)+'\n');
 fs.writeFileSync('js/pages.json',JSON.stringify(Object.entries(pages).map(([name,p])=>({url:name+'.html',title:p.title,type:p.type||'main'})),null,2));
-// Deployment output explicitly excludes archived reference imagery and review documents.
+// Deployment output includes only the current website and its public assets.
 fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist');
 for(const file of Object.keys(pages)){fs.mkdirSync(path.dirname(`dist/${file}.html`),{recursive:true});fs.copyFileSync(`${file}.html`,`dist/${file}.html`);}
 for(const dir of ['css','js'])fs.cpSync(dir,`dist/${dir}`,{recursive:true});
 fs.mkdirSync('dist/assets');for(const dir of ['generated','fonts'])fs.cpSync(`assets/${dir}`,`dist/assets/${dir}`,{recursive:true});fs.copyFileSync('assets/favicon.svg','dist/assets/favicon.svg');
-console.log(`Built ${Object.keys(pages).length} pages: Home, About, Services, Equipment and Contact. Archived images excluded from dist.`);
+console.log(`Built ${Object.keys(pages).length} pages: Home, About, Services, Equipment and Contact. Current website assets only.`);

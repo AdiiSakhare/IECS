@@ -53,8 +53,8 @@ for(const f of catalog){
   if(v.image)assert(fs.existsSync(path.join(root,v.image)),`${v.name}: missing concept image`);
  }
 }
-assert.equal(fs.readdirSync('assets/trash/products-old-images').length,35);
+for(const retired of ['assets/trash','assets/images','assets/generated/products']){assert(!fs.existsSync(retired),`${retired}: retired website files must stay removed`);}
 assert(!fs.existsSync('dist/assets/trash'));
 for(const folder of ['products','services']){assert(!fs.existsSync(folder),`${folder}: removed page directory must stay absent`);assert(!fs.existsSync(path.join(root,folder)),`${folder}: removed pages must not be deployed`);}
 const css=fs.readFileSync('css/site.css','utf8');assert(css.includes('prefers-reduced-motion'));assert(css.includes('background:#fff'));
-console.log(`Static checks passed: ${pages.length} pages, ${checked} links/assets, 6 equipment groups, 23 documented services, all anchors resolved, archived assets excluded.`);
+console.log(`Static checks passed: ${pages.length} pages, ${checked} links/assets, 6 equipment groups, 23 documented services, all anchors resolved, retired website files absent.`);

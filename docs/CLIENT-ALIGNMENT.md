@@ -28,10 +28,10 @@ The unclear business-card phrase “Maintenance of Filed Work” is not reinterp
 
 The Equipment page keeps `products.html` and the existing filter/dialog interaction. Six groups replace the 34 image-derived product variants: machines/tooling; panels/controls; testing/traceability; conveyors/assembly lines; workstations/safety; storage/material handling. The groups describe custom capabilities rather than an off-the-shelf catalogue. No ESD ratings, camera/lighting specifications, capacities, fixed configurations or other technical specifications are inferred from AI illustrations.
 
-SCADA, robotic integration, retrofitting, genuine spare parts and detailed preventive-maintenance contract promises are excluded because the supplied text does not establish them. No project history, customer endorsements, company age, delivery guarantee or response-time promise is added. Archived drafts are retained under `docs/` and `assets/trash/`; they are not publishing inputs or deployment output.
+SCADA, robotic integration, retrofitting, genuine spare parts and detailed preventive-maintenance contract promises are excluded because the supplied text does not establish them. No project history, customer endorsements, company age, delivery guarantee or response-time promise is added. Retired drafts, source code and reference assets have been removed; the current publishing inputs live in `config/` and `scripts/build.mjs`.
 
 ## Validation
 
-Run `npm run build`, `npm run check`, and `npm run check:browser` against the local server. Static checks cover five pages, relative links/assets/anchors, client contact actions and map query, published equipment data, service count, unsupported claims and archived-asset exclusion. Browser checks cover all pages at 320, 390, 768 and 1440 pixels, all six equipment filters/dialogs, dialog focus restoration, service accordions, mobile menu, contact paths and reduced motion. Browser reports and screenshots are saved in ignored `artifacts/`.
+Run `npm run build`, `npm run check`, and `npm run check:browser` against the local server. Static checks cover five pages, relative links/assets/anchors, client contact actions and map query, published equipment data, service count, unsupported claims and absence of retired site assets. Browser checks cover all pages at 320, 390, 768 and 1440 pixels, all six equipment filters/dialogs, dialog focus restoration, service accordions, mobile menu, contact paths and reduced motion. Browser reports and screenshots are saved in ignored `artifacts/`.
 
-Deploy only `dist/`. The user requested a push to the existing QA branch after the build passes.
+Use `dist/` for build-based deployment. The current release is synchronised across the repository branches.

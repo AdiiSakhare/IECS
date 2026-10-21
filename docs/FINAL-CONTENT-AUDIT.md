@@ -1,10 +1,10 @@
 # Final service and content audit
 
-Reviewed on 21 October 2026. Scope: the five-page site on the existing QA branch (`fee99f8`), brought forward into `dev-branch` before editing. Production `main` remains at `c8b85c0fbd682ab5871eb8446972c3a1a30dd016` and is outside this release.
+Reviewed on 21 October 2026. Scope: the current five-page IECS website, checked on development and QA and subsequently promoted to all release branches at the user’s request.
 
 ## Service coverage
 
-The attached client image lists 20 services. All 20 were already covered in the newer QA site, sometimes within a shared service disclosure. The older production source has a different service catalogue; the initial findings from that version do not describe the QA baseline. The current site has 23 disclosures across six groups because its existing client-alignment documentation also records capabilities from two other supplied company sheets. Those additional capabilities have been preserved.
+The attached client image lists 20 services. All 20 were already covered in the newer QA site, sometimes within a shared service disclosure. The current site has 23 disclosures across six groups because its existing client-alignment documentation also records capabilities from two other supplied company sheets. Those additional capabilities have been preserved.
 
 | # | Client image service | Published service disclosure(s) | Section |
 | --- | --- | --- | --- |
@@ -60,7 +60,7 @@ Some direct web pages failed retrieval; the search-index evidence is narrower th
 ## Validation
 
 - `npm run build`: passed; five pages generated.
-- `npm run check`: passed; 148 local links/assets, anchors, contact values and catalogue references checked; archives excluded from deployment output.
+- `npm run check`: passed; 148 local links/assets, anchors, contact values and catalogue references checked; retired site assets absent from source and deployment output.
 - `npm run check:content`: passed; 20/20 brochure services covered, each with an enquiry path.
 - Full Chromium browser run: all five pages at 320, 390, 768 and 1440 pixels passed layout and loading checks. Equipment filters/dialogs, contact paths, menu/dialog focus restoration and reduced motion passed; no JavaScript errors or failed asset requests.
 - Final interaction run: passed for all 23 service disclosures (opening, exact visible description, contact link and closing), alongside the existing equipment/contact/menu flows.
@@ -71,4 +71,4 @@ These checks establish content coverage and local Chromium behaviour. They do no
 
 ## Release scope
 
-Commit changes on `dev-branch`; push `dev-branch` first. Promote that exact checked commit to remote `QA` only after the checks pass. Use normal fast-forward pushes and verify both remote heads. Do not push, merge into or deploy `main` during this review. Deployable output remains `dist/`, and no hosting action is part of this change.
+The user subsequently approved the new website on every repository branch. Keep `dev-branch`, `QA` and `main` aligned using normal fast-forward pushes. The separate `iecs-website` repository is explicitly excluded from changes. GitHub Pages publishes the branch selected in repository settings; preserving a branch does not isolate it from hosting when that branch is the configured source. Deployable build output remains `dist/`.
