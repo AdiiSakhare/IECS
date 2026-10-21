@@ -6,19 +6,19 @@
     "items": [
       {
         "title": "Industrial & Low-Cost Automation",
-        "description": "Automation solutions developed around manufacturing processes and assembly operations."
+        "description": "Automate manufacturing and assembly tasks with solutions suited to your process and budget, including low-cost automation options."
       },
       {
         "title": "PLC & Control Software",
-        "description": "PLC automation and control software design and development for machines and production processes."
+        "description": "Develop programmable logic controller (PLC) and control software for your machines and production processes. Share the operating sequence and control requirements you need."
       },
       {
         "title": "Manufacturing Process Development",
-        "description": "Design and development of new manufacturing processes, including engineering control solutions for assembly."
+        "description": "Design and develop new manufacturing processes around your component and production requirements, with engineering controls for assembly where needed."
       },
       {
         "title": "Assembly Controls & Poka-Yoke",
-        "description": "Control solutions and mistake-proofing provisions for assembly lines and conveyor operations."
+        "description": "Develop assembly process controls and Poka-Yoke: mistake-proofing methods that help prevent or detect specific assembly errors."
       }
     ]
   },
@@ -29,19 +29,19 @@
     "items": [
       {
         "title": "Special-Purpose & Custom Machines",
-        "description": "Design, development, building and assembly of complete machines for specific production requirements."
+        "description": "Design, develop, build and assemble special-purpose and custom machines for your production task. Share the component, operation and available space to define the scope."
       },
       {
         "title": "Press Machines",
-        "description": "Press machine solutions developed around the component and pressing operation."
+        "description": "Develop press machine solutions around your component and pressing operation. Discuss the process requirements before selecting a configuration."
       },
       {
         "title": "Mechanical Tooling & Fixtures",
-        "description": "Design and development of mechanical tools, assembly tools, jigs, checking fixtures and fixturing solutions."
+        "description": "Design and develop mechanical tools, special assembly tools, jigs and checking fixtures to position parts and support repeatable work."
       },
       {
         "title": "Prototyping & Sample Development",
-        "description": "Prototype and sample development to support new components and manufacturing processes."
+        "description": "Develop prototypes and samples to help you evaluate a component or manufacturing approach before moving to the next stage."
       }
     ]
   },
@@ -52,15 +52,15 @@
     "items": [
       {
         "title": "Testing Setups & EOL Machines",
-        "description": "Design and development of testing setups and end-of-line testing machines for production quality checks."
+        "description": "Design and develop testing setups and end-of-line (EOL) testing machines for production quality checks. Define what needs to be checked and the acceptance criteria for your part."
       },
       {
         "title": "Process & Data Traceability",
-        "description": "Traceability solutions for recording and tracking process parameters and production data."
+        "description": "Record and track process parameters and production data so you can review what happened during manufacturing. Discuss which records your process needs to retain."
       },
       {
         "title": "Barcode Scanning Systems",
-        "description": "Barcode scanning systems to support identification and traceability within the manufacturing process."
+        "description": "Use barcode scanning to identify parts and support traceability within your manufacturing process. Discuss where scans are needed and how the data will be used."
       }
     ]
   },
@@ -71,19 +71,19 @@
     "items": [
       {
         "title": "Control Panels & LT / HT Panels",
-        "description": "Design and development of process control panels and LT and HT electrical panels, including control panel wiring."
+        "description": "Design and develop process control panels and low-tension (LT) and high-tension (HT) electrical panels, including electrical control panel wiring. Share your load, supply and control requirements to define the panel scope."
       },
       {
         "title": "Industrial Wiring & Electrical Cabling",
-        "description": "Industrial electrical distribution board (DB) wiring, electrical cabling and associated electrical work."
+        "description": "Industrial electrical distribution board (DB) wiring, electrical cabling and associated electrical work for manufacturing setups."
       },
       {
         "title": "Hydraulic & Pneumatic Controls",
-        "description": "Design and development of hydraulic and pneumatic system controls for industrial applications."
+        "description": "Design and develop hydraulic and pneumatic system controls for industrial equipment. Discuss the movements and operating requirements your process needs."
       },
       {
         "title": "Pneumatic Pipelines",
-        "description": "Pneumatic pipeline work for industrial equipment and manufacturing setups."
+        "description": "Pneumatic pipeline work for manufacturing setups. Share your equipment layout and connection requirements to discuss the installation scope."
       }
     ]
   },
@@ -94,19 +94,19 @@
     "items": [
       {
         "title": "Assembly Lines & Conveyors",
-        "description": "Assembly line and conveyor setup with special tools and Poka-Yoke provisions to suit the process."
+        "description": "Set up assembly lines and conveyors with special tools and Poka-Yoke mistake-proofing provisions. Plan the setup around your assembly sequence and material flow."
       },
       {
         "title": "Ergonomic Workstations & Safety",
-        "description": "Ergonomic solutions for assembly operations, with machinery safety interlocks and guarding provisions."
+        "description": "Develop ergonomic solutions for assembly tasks, alongside machinery safety interlocks and guarding provisions. Define operator access and application-specific safety requirements during project scoping."
       },
       {
         "title": "Storage & Material Handling",
-        "description": "Design and build of storage racks, bins, special trolleys and material-handling solutions."
+        "description": "Design and build storage racks, bins and special trolleys around your parts and shop-floor layout, with material-handling solutions for moving parts between operations."
       },
       {
         "title": "Fabrication & Engineering Works",
-        "description": "Fabrication and engineering work for custom equipment, supports and manufacturing setups."
+        "description": "Fabrication and engineering work for custom equipment, supports and manufacturing setups. Share your drawing or requirement to discuss the scope."
       }
     ]
   },
@@ -117,19 +117,19 @@
     "items": [
       {
         "title": "Machine Installation & Commissioning",
-        "description": "Installation and commissioning of new machines and production equipment."
+        "description": "Installation and commissioning of new machines and production equipment. Discuss site readiness, connections and the checks needed before handover."
       },
       {
         "title": "Annual Plant Maintenance",
-        "description": "Annual maintenance services for plant equipment and manufacturing machinery."
+        "description": "Annual maintenance services for plant equipment and manufacturing machinery. Share your equipment list and maintenance needs to agree the service scope."
       },
       {
         "title": "Machine & Plant Relocation",
-        "description": "Machine relocation and shifting of manufacturing setups and industrial projects."
+        "description": "Machine relocation and shifting of manufacturing setups. Share the existing and proposed layouts to discuss the equipment moves and site requirements."
       },
       {
         "title": "Hoists & Jib Crane Installation",
-        "description": "Installation and commissioning of lifting hoists and jib cranes."
+        "description": "Installation and commissioning of lifting hoists and jib cranes. Discuss the equipment and site requirements before planning the work."
       }
     ]
   }

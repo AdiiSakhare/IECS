@@ -55,7 +55,21 @@ try{
  assert.equal(await page.locator('.contact-directory a[href^="tel:"]').getAttribute('href'),'tel:+919527380281');
  assert.equal(await page.locator('.contact-directory a[href^="mailto:"]').getAttribute('href'),'mailto:iecs.control@gmail.com');
  results.push('Catalogue → product dialog → contact details passed; form absent; dialog focus restoration passed');
- await page.goto(new URL('services.html',base).href);await page.locator('summary').first().click();assert.equal(await page.locator('details').count(),23);
+ await page.goto(new URL('services.html',base).href);
+ const expectedServices=JSON.parse(fs.readFileSync(path.join(root,'config/services.json'),'utf8')).flatMap(g=>g.items);
+ const serviceDetails=page.locator('details');
+ assert.equal(await serviceDetails.count(),expectedServices.length);
+ for(let i=0;i<expectedServices.length;i++){
+  const detail=serviceDetails.nth(i);
+  await detail.locator('summary').click();
+  assert.equal(await detail.getAttribute('open'),'');
+  assert.equal(await detail.locator('p').textContent(),expectedServices[i].description);
+  assert(await detail.locator('p').isVisible(),`${expectedServices[i].title}: description visible`);
+  assert.equal(await detail.locator('a').getAttribute('href'),'contact.html');
+  await detail.locator('summary').click();
+ }
+ results.push(`All ${expectedServices.length} service accordions: open, readable descriptions, contact links and close passed`);
+ await serviceDetails.first().locator('summary').click();
  await page.locator('.menu-toggle').click();await page.keyboard.press('Escape');assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');assert(await page.locator('.menu-toggle').evaluate(el=>el===document.activeElement));
  await page.getByRole('link',{name:'Discuss your requirement'}).first().click();assert(page.url().endsWith('/contact.html'));assert(await page.locator('#contact-details-title').isVisible());
  results.push('Services accordion → contact details passed; mobile menu Escape and focus restoration passed');

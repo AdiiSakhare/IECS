@@ -15,6 +15,7 @@ Open http://localhost:4173. `PORT=8080 npm run dev` selects another port.
 
 ```sh
 npm run check
+npm run check:content
 ```
 
 ## Editing
@@ -22,6 +23,7 @@ npm run check
 - `config/site.json`: client-provided contact person, phone, email, Bhosari address and GSTIN.
 - `config/services.json`: 23 documented capabilities organised into six service groups.
 - `config/equipment.json`: six equipment capability groups and their supported application descriptions.
+- `docs/FINAL-CONTENT-AUDIT.md`: 20-service brochure mapping, web verification sources, copy decisions and current QA results.
 - `docs/CLIENT-ALIGNMENT.md`: source mapping, editorial decisions and validation for the company alignment.
 - `scripts/build.mjs`: shared page templates, family summaries, navigation and copy. Running the build regenerates all five HTML pages, `js/catalog.json` and the page inventory in `js/pages.json`.
 - `css/site.css`: design tokens and responsive layouts.
